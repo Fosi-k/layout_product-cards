@@ -1,3 +1,19 @@
+@use 'variables' as *;
+@use 'card';
+@use 'stars';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  background-color: bisque;
+  min-height: 100vh;
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

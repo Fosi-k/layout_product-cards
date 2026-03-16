@@ -1,0 +1,101 @@
+@use 'variables' as *;
+
+body {
+  margin: 0;
+  background-color: bisque;
+  min-height: 100vh;
+  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: $card-width;
+  height: $card-height;
+  box-sizing: border-box;
+  background-color: #fff;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+
+  &__image {
+    padding: 33px 20px 24px;
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 160px;
+      height: 134px;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 16px 17px 4px;
+    color: #060b35;
+  }
+
+  &__code {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0 17px 16px;
+    color: #616070;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 166px;
+    height: 40px;
+    background-color: $color-button;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 16px 17px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #fff;
+      border-color: $color-button;
+      color: $color-button;
+    }
+  }
+}
+
+.revi {
+  font-size: 10px;
+  line-height: 14px;
+  margin-left: auto;
+  color: #060b35;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 17px 16px;
+  height: 18px;
+
+  &__label1 {
+    font-size: 12px;
+    line-height: 18px;
+    color: #616070;
+  }
+
+  &__label2 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #060b35;
+  }
+}
