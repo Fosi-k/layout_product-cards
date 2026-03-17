@@ -1,15 +1,10 @@
 @use 'variables' as *;
 
-body {
-  margin: 0;
-  font-family: $font-family;
-}
-
 .card {
   width: $card-width;
   height: $card-height;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: $card-background-color;
   overflow: hidden;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
@@ -65,22 +60,14 @@ body {
       color: $color-button;
     }
   }
-}
 
-.revi {
-  font-size: 10px;
-  line-height: 14px;
-  margin-left: auto;
-  color: #060b35;
-}
-
-.price {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 17px 16px;
-  height: 18px;
-
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 17px 16px;
+    height: 18px;
+  }
   &__label1 {
     font-size: 12px;
     line-height: 18px;
