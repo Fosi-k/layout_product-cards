@@ -17,11 +17,12 @@
     background-repeat: no-repeat;
     margin-right: $star-margin-right;
   }
+
   &__revi {
-    font-size: 10px;
-    line-height: 14px;
+    font-size: $revi-font-size;
+    line-height: $revi-line-height;
     margin-left: auto;
-    color: #060b35;
+    color: $color-dark;
   }
 
   @for $i from 0 through 5 {

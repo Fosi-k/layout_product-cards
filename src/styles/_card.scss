@@ -6,35 +6,35 @@
   box-sizing: border-box;
   background-color: $card-background-color;
   overflow: hidden;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+  border: $card-border;
+  border-radius: $card-border-radius;
 
   &__image {
-    padding: 33px 20px 24px;
+    padding: $card-image-padding;
     display: flex;
     justify-content: center;
 
     img {
-      width: 160px;
-      height: 134px;
+      width: $card-img-width;
+      height: $card-img-height;
       display: block;
       object-fit: cover;
     }
   }
 
   &__name {
-    font-size: 12px;
+    font-size: $card-name-font-size;
     font-weight: 500;
-    line-height: 18px;
-    margin: 16px 17px 4px;
-    color: #060b35;
+    line-height: $card-name-line-height;
+    margin: 16px $card-side-margin 4px;
+    color: $color-dark;
   }
 
   &__code {
-    font-size: 10px;
-    line-height: 14px;
-    margin: 0 17px 16px;
-    color: #616070;
+    font-size: $card-code-font-size;
+    line-height: $card-code-line-height;
+    margin: 0 $card-side-margin 16px;
+    color: $color-muted;
   }
 
   &__button {
@@ -42,20 +42,20 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    width: 166px;
-    height: 40px;
+    width: $button-width;
+    height: $button-height;
     background-color: $color-button;
-    color: #fff;
+    color: $color-white;
     border: 1px solid transparent;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: $card-border-radius;
+    font-size: $button-font-size;
     font-weight: 700;
-    line-height: 16px;
-    margin: 16px 17px;
+    line-height: $button-line-height;
+    margin: 16px $card-side-margin;
     cursor: pointer;
 
     &:hover {
-      background-color: #fff;
+      background-color: $color-white;
       border-color: $color-button;
       color: $color-button;
     }
@@ -65,19 +65,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 17px 16px;
-    height: 18px;
+    margin: 20px $card-side-margin 16px;
+    height: $card-name-line-height;
   }
+
   &__label1 {
-    font-size: 12px;
-    line-height: 18px;
-    color: #616070;
+    font-size: $price-label1-font-size;
+    line-height: $card-name-line-height;
+    color: $color-muted;
   }
 
   &__label2 {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: $price-label2-font-size;
+    line-height: $card-name-line-height;
     font-weight: 700;
-    color: #060b35;
+    color: $color-dark;
   }
 }
