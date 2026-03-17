@@ -1,14 +1,13 @@
-@use 'variables' as *;
-@use 'card';
-@use 'stars';
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+@import './variables';
+@import './card';
+@import './stars';
 
 body {
   margin: 0;
-  font-family: $font-family;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
